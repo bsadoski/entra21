@@ -1,5 +1,5 @@
 <html>
-<form>
+  <form>
     <div>
       <label for="fname">First name: </label>
       <input id="fname" type="text">
@@ -12,7 +12,7 @@
        <input id="submit" type="submit">
     </div>
   </form>
-<p></p>
+<p style="background-color: red;"></p>
 </html>
 <script>
     const form = document.querySelector('form');
@@ -21,10 +21,10 @@
     const para = document.querySelector('p');
 
     form.onsubmit = function(e) {
-    if (fname.value === '' || lname.value === '') {
-        e.preventDefault();
-        para.textContent = 'You need to fill in both names!';
-    }
+      if (fname.value === '' || lname.value === '') {
+          e.preventDefault();
+          para.textContent = 'Precisa preencher os dois nomes!';
+      }
     }
 </script>
 
