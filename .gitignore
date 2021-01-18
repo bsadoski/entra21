@@ -1,7 +1,7 @@
 __pycache__
 poke.db
 pessoas.txt
-scrapper/*
+scrapper/env
 git_command/*
 .vscode/*
 aula-js-1/heroes/

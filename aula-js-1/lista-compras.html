@@ -1,7 +1,18 @@
 <html>
     <div class="output" style="min-height: 150px;">
-        <ul></ul>
+        <ul id='listinha'>
+        </ul>
         <p></p>
+    </div>
+    <div id='divPai'>
+        <div id="divFilha1">
+            <div id='divNeta'>
+
+            </div>
+        </div>
+        <div id="divFilha2">
+
+        </div>
     </div>
 </html>
 
@@ -9,14 +20,14 @@
 
 var list = document.querySelector('.output ul');
 var totalBox = document.querySelector('.output p');
+// var listinha = document.getElementById('listinha');
 var total = 0;
+
 list.innerHTML = '';
 totalBox.textContent = '';
 
 var products = [
-'Underpants:6.99',
- 'Socks:5.99',
- 'T-shirt:14.99',
+ 'Underpants:6.99','Socks:5.99','T-shirt:14.99',
  'Trousers:31.99',
  'Shoes:23.99'
 ];
@@ -33,6 +44,6 @@ for(var i = 0; i < products.length; i++) {
  list.appendChild(listItem);
 }
 
-totalBox.textContent = 'Total: $' + total.toFixed(2);
+totalBox.textContent = 'Total: $' + total.toFixed(1);
 
 </script>
